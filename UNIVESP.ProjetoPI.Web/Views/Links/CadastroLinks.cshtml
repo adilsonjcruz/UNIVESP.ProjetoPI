@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro de Links";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Cadastro Pontos de QRCode</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+
+</head>
+
+<h2>Cadastro de Links</h2>
+
+<form class="form-horizontal">
+    <fieldset>
+
+        <!-- Form Name -->
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="selectbasic">Local do QR Code:</label>
+            <div class="col-md-5">
+                <select id="selectbasic" name="selectbasic" class="form-control">
+                    <option value="0">- Escolha o Local de QR Code</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="cbxPeriodos">Periodo:</label>
+            <div class="col-md-4">
+                <select id="cbxPeriodos" name="cbxPeriodos" class="form-control">
+                    <option value="N">- Escolha o Período</option>
+                    <option value="X">Todos Períodos</option>
+                    <option value="M">Manhã</option>
+                    <option value="T">Tarde</option>
+                    <option value="N">Noite</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="edtLink">Link Redirecionar:</label>
+            <div class="col-md-7">
+                <input id="edtLink" name="edtLink" type="text" placeholder="" class="form-control input-md" required="">
+
+            </div>
+        </div>
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="btnGravar"></label>
+            <div class="col-md-8">
+                <button id="btnGravar" name="btnGravar" class="btn btn-success">Gravar</button>
+                <button id="btnCancelar" name="btnCancelar" class="btn btn-danger">Limpar</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>

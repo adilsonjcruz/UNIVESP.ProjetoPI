@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Painel de Controle";
+}
+
+<div class="jumbotron">
+    <h1>UNIVESP</h1>
+    <p class="lead">Atividades desenvolvidas para a Disciplina Projeto Integrador II, do Curso de Engenharia de Computação da UNIVESP.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Configurações</h2>
+        <p>Modifique as configurações do Sistema.</p>
+        <p>@Html.ActionLink("Ok", "Configuracoes", "Configuracoes", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Locais de QR Code</h2>
+        <p>Cadastre os locais onde será disposto o QRCode.</p>
+        <p>@Html.ActionLink("Ok", "Cadastro","Ponto", null, new {@class= "btn btn-default"})</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Links</h2>
+        <p>Cadastre os links para redirecionamento.</p>
+        <p>@Html.ActionLink("Ok", "CadastroLinks", "Links", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>

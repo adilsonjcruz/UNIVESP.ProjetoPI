@@ -1,0 +1,57 @@
+﻿@using UNIVESP.ProjetoPI.Web.Models
+@model Ponto
+
+@{
+//    ViewBag.Title = "Index";
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Cadastro Pontos de QRCode</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+
+</head>
+<div>
+    @using (Html.BeginForm("Cadastro", "Ponto", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        <fieldset>
+
+            <!-- Form Name -->
+            <legend>Pontos de QR Code</legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtCodigo">Código:</label>
+                <div class="col-md-2">
+                    <input id="txtCodigo" name="txtCodigo" type="text" placeholder="" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="txtDescricao">Descrição:</label>
+                <div class="col-md-5">
+                    <input id="txtDescricao" name="txtDescricao" type="text" placeholder="Descrição do Ponto de QRCode" class="form-control input-md" required="">
+
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="btnGravar"></label>
+                <div class="col-md-8">
+                    <button id="btnGravar" name="btnGravar" class="btn btn-success">Gravar</button>
+                    <button id="btnLimpar" name="btnLimpar" class="btn btn-danger">Limpar</button>
+                </div>
+            </div>
+
+        </fieldset>
+
+    }
+</div>

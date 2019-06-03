@@ -1,0 +1,43 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Login - Projeto Integrador</title>
+
+    <link href="~/Content/anexo/formlogin.css" rel="stylesheet">
+    <link href="~/Content/anexo/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+</head>
+<body>
+    
+    <div class="container login-container">
+        <div class="row">
+            <div class="col-md-6 login-form-1">
+                <h3>Projeto Integrador UNIVESP</h3>
+                @using (Html.BeginForm("Index", "Painel", FormMethod.Post))
+                {
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Usuário *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Senha *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Login" />
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="ForgetPwd">Recuperar Senha?</a>
+                    </div>                
+                }
+            </div>
+        </div>
+    </div>
+      
+</body>
+</html>
